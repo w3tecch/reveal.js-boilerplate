@@ -4,6 +4,10 @@ module.exports = {
   scripts: {
     default: 'nps webpack',
     build: 'nps webpack.build',
+    deploy: series(
+      'nps build',
+      'gh-pages -d dist'
+    ),
     webpack: {
       default: 'nps webpack.server',
       build: {

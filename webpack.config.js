@@ -16,7 +16,7 @@ const title = pkg.title;
 const outDir = path.resolve(__dirname, 'dist');
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
-const baseUrl = '/';
+const baseUrl = process.env.NODE_ENV === 'production' ? `/${pkg.repositoryName}/` : './';
 
 const cssRules = [
   { loader: 'css-loader' },
