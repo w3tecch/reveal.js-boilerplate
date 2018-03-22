@@ -1,11 +1,26 @@
 {
-  "name": "reveal-boilerplate",
-  "title": "reveal-boilerplate",
+  "name": "reveal.js-boilerplate",
+  "title": "reveal.js-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.html",
   "license": "MIT",
   "repositoryName": "reveal.js-boilerplate",
+  "repository": "git+ssh://git@github.com/w3tec/reveal.js-boilerplate.git",
+  "homepage": "https://w3tecch.github.io/reveal.js-boilerplate",
+  "author": "w3tec.ch <info@w3tec.ch>",
+  "contributors": [
+    {
+      "name": "Gery Hirschfeld",
+      "email": "gery.hirschfeld@w3tec.ch",
+      "url": "https://github.com/hirsch88"
+    },
+    {
+      "name": "David Weber",
+      "email": "david.weber@w3tec.ch",
+      "url": "https://github.com/dweber019"
+    }
+  ],
   "engines": {
     "node": ">= 6.0.0"
   },
