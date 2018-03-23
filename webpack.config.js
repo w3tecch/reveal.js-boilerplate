@@ -16,7 +16,7 @@ const title = pkg.title;
 const outDir = path.resolve(__dirname, 'dist');
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
-const baseUrl = process.env.NODE_ENV === 'production' ? `/${pkg.repositoryName}/` : './';
+const baseUrl = process.env.NODE_ENV === 'production' ? `/${pkg.repositoryName}/` : '/';
 
 const cssRules = [
   { loader: 'css-loader' },
@@ -51,6 +51,10 @@ module.exports = ({ production, server, extractCss, coverage } = {}) => ({
   },
   module: {
     rules: [
+      {
+        test: /\.(html|md)$/,
+        use: 'raw-loader'
+      },
       // CSS required in JS/TS files should use the style-loader that auto-injects it into the website
       // only when the issuer is a .js/.ts file, so the loaders are not applied inside html templates
       {
@@ -66,7 +70,7 @@ module.exports = ({ production, server, extractCss, coverage } = {}) => ({
         issuer: [{ test: /\.html$/i }],
         use: cssRules,
       },
-      { test: /\.html$/i, loader: 'html-loader' },
+      // { test: /\.html$/i, loader: 'html-loader' },
       {
         test: /\.js$/i, loader: 'babel-loader', exclude: nodeModulesDir,
         options: coverage ? { sourceMap: 'inline', plugins: ['istanbul'] } : {},
@@ -91,6 +95,8 @@ module.exports = ({ production, server, extractCss, coverage } = {}) => ({
       '$': 'jquery',
       'jQuery': 'jquery',
       'window.jQuery': 'jquery',
+      'window.Reveal': 'reveal.js',
+      'Reveal': 'reveal.js',
     }),
     new HtmlWebpackPlugin({
       template: 'index.ejs',

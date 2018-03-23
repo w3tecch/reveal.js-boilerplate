@@ -8,6 +8,7 @@ module.exports = {
       'nps build',
       'gh-pages -d dist'
     ),
+    clean: rimraf('dist'),
     webpack: {
       default: 'nps webpack.server',
       build: {
