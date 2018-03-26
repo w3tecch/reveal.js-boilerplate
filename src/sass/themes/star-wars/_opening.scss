@@ -1,0 +1,65 @@
+section.opening {
+  padding: 0 !important;
+  height: 100%;
+
+  .container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+    .inner {
+      flex: 1;
+    }
+  }
+
+  p {
+    color: $oc-yellow-5;
+  }
+
+  /* Set the font, lean the board, position it */
+  #board {
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 95%;
+    text-align: justify;
+    position: absolute;
+    margin-left: -8em;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 350%;
+    height: 40em;
+    width: 16em;
+    bottom: 0;
+    left: 50%;
+  }
+
+  #board:after {
+    position: absolute;
+    content: ' ';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  /* Set the scrolling animation and position it */
+  #content {
+    animation: scroll 50s linear .5s;
+    position: absolute;
+    top: 100%;
+  }
+
+  #subtitle,
+  #title {
+    text-align: center;
+  }
+  @keyframes scroll {
+    0% {
+      top: 100%;
+    }
+
+    100% {
+      top: -10%;
+    }
+  }
+
+}

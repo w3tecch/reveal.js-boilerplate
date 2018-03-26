@@ -1,0 +1,13 @@
+/**
+ * FONT IMPORTS
+ */
+@font-face {
+  font-family: 'STARWARS';
+  src: url('../../static/fonts/STARWARS.eot?') format('eot'), url('../../static/fonts/STARWARS.woff') format('woff'), url('../../static/fonts/STARWARS.ttf') format('truetype'), url('../../static/fonts/STARWARS.svg#STARWARS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@import 'settings';
+@import 'title';
+@import 'lead';
+@import 'opening';

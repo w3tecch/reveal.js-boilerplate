@@ -4,19 +4,12 @@
 @import "../../node_modules/font-awesome/css/font-awesome.css";
 @import "../../node_modules/reveal.js/css/reveal.css";
 @import "../../node_modules/highlight.js/styles/atom-one-dark.css";
-/**
- * FONT IMPORTS
- */
-@font-face {
-  font-family: 'STARWARS';
-  src: url('../../static/fonts/STARWARS.eot?') format('eot'), url('../../static/fonts/STARWARS.woff') format('woff'), url('../../static/fonts/STARWARS.ttf') format('truetype'), url('../../static/fonts/STARWARS.svg#STARWARS') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 /**
  * SASS IMPORTS
  */
 @import 'open-color';
 @import 'mixins';
-@import './themes/star-wars';
+@import 'common';
+@import './themes/star-wars/star-wars';
 @import 'theme';
