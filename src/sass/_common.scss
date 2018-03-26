@@ -1,0 +1,16 @@
+section.box-center {
+  height: 100%;
+  padding: 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &.space-around > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
