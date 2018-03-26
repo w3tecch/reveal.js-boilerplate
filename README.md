@@ -5,7 +5,7 @@
 <h1 align="center">Reveal.js Boilerplate</h1>
 
 <p align="center">
-  <b>TODO</b></br>
+  <b>A simple and comfortable way to make a presentation</b></br>
 </br>
   <sub>Made with ❤️ by <a href="https://github.com/w3tecch">w3tech</a> & <a href="https://github.com/w3tecch/reveal.js-boilerplate/graphs/contributors">contributors</a></sub>
 </p>
@@ -14,7 +14,13 @@
 
 ## ❯ Why
 
-TODO
+Full configured [reveal.js](https://revealjs.com/) sample project with [webpack](https://webpack.js.org/) and some awesome features:
+
+### Features
+
+- **Markdown & HTML Support** Write your slides with the markdown or html language.
+- **Sass** Define your styles with [Sass](https://sass-lang.com/).
+- **Github Deployment** Run `npm start deploy` to deploy your builded presentation on th github pages.
 
 ![divider](./w3tec-divider.png)
 
