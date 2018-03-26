@@ -14,6 +14,7 @@ import pageMarkDown from './slides/000-page-md.slide.md';
 import swLead from './slides/100-sw-lead.slide.html';
 import swTitle from './slides/100-sw-title.slide.html';
 import swOpening from './slides/100-sw-opening.slide.html';
+import swGif from './slides/100-sw-gif.slide.html';
 
 // -------------------------------------------------------------------------
 // Slides
@@ -23,6 +24,7 @@ const slides = [
   swLead,
   swTitle,
   swOpening,
+  swGif,
 
   pageJS,
   pageHTML,

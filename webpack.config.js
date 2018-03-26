@@ -110,10 +110,10 @@ module.exports = ({ production, server, extractCss, coverage } = {}) => ({
       },
     }),
     new CopyWebpackPlugin([
-      { from: 'static/favicon.ico', to: 'favicon.ico' }
+      { from: 'static/', to: 'static' }
     ]),
     new FaviconsWebpackPlugin({
-      logo: path.resolve('icon.png'),
+      logo: path.resolve('static/images/favicon.png'),
       icons: {
         android: false,
         appleIcon: false,
